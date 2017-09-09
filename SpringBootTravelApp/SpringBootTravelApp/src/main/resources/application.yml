@@ -1,0 +1,10 @@
+spring: 
+  application: 
+    name: Flight-service
+  data: 
+    mongodb: 
+      database: flightsdb
+      host: localhost
+      port: 27017
+server: 
+  port: 3333
