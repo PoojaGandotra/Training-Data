@@ -67,7 +67,7 @@
             </thead>
 
             <tbody>
-                <tr th:each="flight : ${flightList}">
+                <tr th:each="flight : ${flightList}">               
                     <td th:text="${flight.flightCode}"></td>
                     <td th:text="${flight.serviceProviderName}"></td>
                     <td th:text="${flight.capacity}"></td>
@@ -79,7 +79,7 @@
 
         <br />
 
-        <h2>Add Loan</h2>
+        <h2>Flight Details</h2>
 
         <form action="/addFlight" method="POST">
             <input type="text" id="flightCode" name="flightCode" placeholder="Flight Code"/><br />

@@ -21,6 +21,7 @@ public class FlightController {
 	public String loadHome(Model model){
 		
 		model.addAttribute("flightList", flightRepository.findAll());
+	
 		System.out.println("Hello Inside Home");
 		return "home";
 	}

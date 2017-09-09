@@ -1,13 +1,26 @@
 package com.anz.travel.models;
 
+import java.io.Serializable;
+
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection ="Flights")
-public class Flight {
+public class Flight implements Serializable{	
+	@Id
+	private Object _Id;
+	
 	private String flightCode;
 	private String serviceProviderName;
 	private String capacity;
 	private String flightClass;
+	
+	public Object get_Id() {
+		return _Id;
+	}
+	public void set_Id(Object _Id) {
+		this._Id = _Id;
+	}
 	public String getFlightCode() {
 		return flightCode;
 	}
