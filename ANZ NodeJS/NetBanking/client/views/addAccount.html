@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+ <link type="text/css" rel ="stylesheet" href="main.css">
+ <script type="text/javascript" src="../../node_modules/angular/angular.js"></script>
+
+ <script type="text/javascript" src="../modules/userModule.js"></script>
+ <script type ="text/javascript" src="../modules/customerModule.js"></script>
+ <script type ="text/javascript" src="../modules/accountsModule.js"></script>
+
+ <script type="text/javascript"  src="../services/userService.js"></script>
+ <script type ="text/javascript" src="../services/customerService.js"></script>
+ <script type ="text/javascript" src="../services/accountsService.js"></script>
+
+
+ <script type ="text/javascript" src="../controllers/accountsController.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Add Account</title>
+
+</head>
+<body>
+<section ng-app="AccountsApp" ng-controller="AccountsController">
+    <form ng-submit="save()">
+        <fieldset>
+            <legend>Accounts Form</legend>
+            <label>Account Id</label>
+            <input type="number" ng-model="accountsObj.accountNo" placeholder="Account No">
+            <br></br>
+            <label>Account Type</label>
+            <select ng-model="accountsObj.accountType" selected ng-change="" >
+            <option ng-repeat="obj in accountTypes" value ="{{obj}}">{{obj}}</option></select>
+
+            <br></br>
+            <label>Balance</label>
+            <input type="number" ng-model="accountsObj.balance" placeholder="Balance">
+            <br></br>
+            <label>Customer Details</label>
+            <select ng-model="accountsObj.customerRef" selected ng-change="" >
+                <option ng-repeat="obj in CustomerColl" value ="{{obj.customerId}}">{{obj.customerId}}---{{obj.name}}</option>
+                </select>
+            <br></br>
+            <input type ="submit" value="submit">
+        </fieldset>
+    </form>
+</section>
+</body>
+</html>

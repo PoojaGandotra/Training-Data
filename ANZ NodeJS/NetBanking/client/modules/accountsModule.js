@@ -1,0 +1,1 @@
+var accountsApp= angular.module('AccountsApp',['CustomerApp']);

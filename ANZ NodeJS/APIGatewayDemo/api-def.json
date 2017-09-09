@@ -1,0 +1,12 @@
+[{
+  "host": "localhost",
+  "port": "10000",
+  "redirects":[{
+    "path": "/getCustomers",
+    "method": "get"
+  },
+    {
+    "path": "/createAccount",
+    "method": "post"
+  }]
+}]

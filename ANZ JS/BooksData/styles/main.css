@@ -1,0 +1,22 @@
+img
+{
+    width:100px;
+    height:100px;
+    border:2px solid red;
+
+}
+section
+{
+    width:50%;
+    margin-left:10%;
+    margin-top: 10%;
+}
+th
+{
+    background-color:lightblue;
+}
+
+input
+{
+    font-size: large;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="../node_modules/angular/angular.js"></script>
+    <script type = "text/javascript" src="../node_modules/angular-i18n/angular-locale_ta-in.js"></script>
+    <script type="text/javascript" src="modules/savings.js"></script>
+    <script type="text/javascript" src="controllers/savingscontroller.js"></script>
+</head>
+<body ng-app="SavingsModule">
+<section ng-controller="SavingsCtlr">
+   <form ng-submit="accountSubmit()">
+    Account Id :
+    <input type="number" ng-model="account.accountId">
+    <br/>
+    Balance:
+    <input type="text" ng-model="account.balance|currency">
+    <br/>
+    Account type:
+    <input type="text" ng-model="account.type" list="types">
+    <br/>
+
+       Start Date:
+
+       <input type ="text" ng-model="account.startDate| date:fullDate">
+   <br/>
+    <input type="submit" value="submit">
+   </form>
+</section>
+<datalist id="types">
+    <option>Savings</option>
+    <option>Recurring</option>
+</datalist>
+<section ng-controller="CustomerCtrl">
+<table>
+    <tr ng-repeat="customer in customerdata">
+         <td>
+             {{customer.Customer_Id}}
+         </td>
+        <td>
+            {{customer.Name}}
+        </td>
+        <td>
+            {{customer.address}}
+        </td>
+        <td>
+            {{customer.MobileNo}}
+        </td>
+    </tr>
+</table>
+
+</section>
+</body>
+</html>

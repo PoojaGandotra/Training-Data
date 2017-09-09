@@ -1,0 +1,70 @@
+
+section
+{
+    width:60%;
+    margin-left: 10%;
+    alignment:left;
+}
+label{
+    color: black;
+    width: 40%
+}
+
+fieldset
+{
+    width:80%;
+    border: 2px solid black ;
+}
+legend
+{
+    text-align: center;
+    font-size: large;
+}
+input
+{
+    width:60%;
+    margin-bottom: 2px;
+    margin-left: 10%;
+}
+input[type=submit]
+{
+    width:30%;
+    margin-left: 25%;
+    background-color: blue;
+    color:white;
+    alignment:center ;
+}
+p{
+    color:red;
+    background-color: aquamarine;
+}
+body{
+    background-color:lightcyan;
+}
+h1{
+    font-size: large;
+    font-style: italic;
+    color: darkorange;
+    font-family: Verdana;
+
+}
+table{
+    border: #4c9fff;
+    border-color: blueviolet;
+    border-style:inset;
+    alignment: left;
+
+}
+ tr:nth-child(2n){
+    color: #4c9fff;
+    border-style: inset;
+}
+td{
+    border-style: inset;
+    font-family: Arial;
+    font-style: normal;
+}
+select
+{
+    width:60%;
+}
